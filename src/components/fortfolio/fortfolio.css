@@ -1,0 +1,77 @@
+.fortfolio{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fortfolio h1{
+    font-size: 50px;
+}
+
+.fortfolio ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.fortfolio ul li{
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fortfolio ul li.active{
+    background-color: #088178;
+    color: white;
+}
+
+.fortfolio .container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fortfolio .container .item{
+    width: 220px;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    transition: all .5s ease;
+}
+
+.fortfolio .container .item h3{
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+}
+
+.fortfolio .container .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.fortfolio .container .item:hover{
+    background-color: #088178;
+}
+
+.fortfolio .container .item img:hover{
+    opacity: 0.2;
+    z-index: 0;
+}
+
+
+
